@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="IndicatorView">
+        <attr name="indicatorColor" format="color" />
+        <attr name="indicatorColorSelected" format="color" />
+        <attr name="indicatorWidth" format="integer" />
+        <attr name="gravity" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="StateButton">
+
+        <!--text color-->
+        <attr name="normalTextColor" format="color|reference" />
+        <attr name="pressedTextColor" format="color|reference" />
+        <attr name="unableTextColor" format="color|reference" />
+
+        <!--stroke width and color, dash width, dash gap-->
+        <attr name="strokeDashWidth" format="dimension|reference" />
+        <attr name="strokeDashGap" format="dimension|reference" />
+        <attr name="normalStrokeWidth" format="dimension|reference" />
+        <attr name="pressedStrokeWidth" format="dimension|reference" />
+        <attr name="unableStrokeWidth" format="dimension|reference" />
+        <attr name="normalStrokeColor" format="color|reference" />
+        <attr name="pressedStrokeColor" format="color|reference" />
+        <attr name="unableStrokeColor" format="color|reference" />
+
+        <!--background color-->
+        <attr name="normalBackgroundColor" format="color|reference" />
+        <attr name="pressedBackgroundColor" format="color|reference" />
+        <attr name="unableBackgroundColor" format="color|reference" />
+
+        <!--background radius-->
+        <attr name="radius" format="dimension|reference" />
+        <attr name="rounds" format="boolean|reference" />
+
+        <!--animation duration-->
+        <attr name="animationDuration" format="integer|reference" />
+
+    </declare-styleable>
+
+
+    <declare-styleable name="BubbleView">
+        <attr name="arrowWidth" format="dimension" />
+        <attr name="angle" format="dimension" />
+        <attr name="arrowHeight" format="dimension" />
+        <attr name="arrowPosition" format="dimension" />
+        <attr name="bubbleColor" format="color" />
+        <attr name="arrowLocation" format="enum">
+            <enum name="left" value="0x00" />
+            <enum name="right" value="0x01" />
+            <enum name="top" value="0x02" />
+            <enum name="bottom" value="0x03" />
+        </attr>
+    </declare-styleable>
+
+
+    <attr name="mwhWaves" format="string|enum">
+        <enum name="MultiWave" value="-1" />
+        <enum name="PairWave" value="-2" />
+    </attr>
+    <attr name="mwhShape" format="enum">
+        <enum name="Rect" value="0" />
+        <enum name="RoundRect" value="1" />
+        <enum name="Oval" value="2" />
+    </attr>
+    <declare-styleable name="MultiWaveHeader">
+        <attr name="mwhWaveHeight" format="dimension" />
+        <attr name="mwhStartColor" format="color" />
+        <attr name="mwhCloseColor" format="color" />
+        <attr name="mwhIsRunning" format="boolean" />
+        <attr name="mwhEnableFullScreen" format="boolean" />
+        <attr name="mwhColorAlpha" format="fraction|float" />
+        <attr name="mwhProgress" format="fraction|float" />
+        <attr name="mwhVelocity" format="fraction|float" />
+        <attr name="mwhGradientAngle" format="integer" />
+        <attr name="mwhCornerRadius" format="dimension" />
+        <attr name="mwhWaves" />
+        <attr name="mwhShape" />
+    </declare-styleable>
+</resources>
