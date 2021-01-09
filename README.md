@@ -1,6 +1,8 @@
 # YouChat
 2020年秋学期 计算机网络课程设计
 
+<img src="logo.png" alt="logo" style="zoom:50%;" />
+
 - YouChat是基于socket的Android聊天软件
 
 - socket文件夹为服务器的工程文件
